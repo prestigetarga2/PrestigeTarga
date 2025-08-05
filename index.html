@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résidence Prestige Targa 2 - Marrakech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header avec sélecteur de langue -->
+        <header class="header">
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">عربي</button>
+            </div>
+        </header>
+
+        <!-- Contenu principal -->
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1 class="title" data-fr="Bienvenue à Marrakech !" data-en="Welcome to Marrakech!" data-ar="مرحباً بكم في مراكش!">Bienvenue à Marrakech !</h1>
+                <p class="subtitle" data-fr="Voici quelques informations utiles durant votre séjour:" data-en="Here are some useful information during your stay:" data-ar="إليكم بعض المعلومات المفيدة خلال إقامتكم:">Voici quelques informations utiles durant votre séjour:</p>
+            </div>
+
+            <div class="info-sections">
+                <!-- Numéros de téléphone -->
+                <section class="info-card">
+                    <div class="card-header">
+                        <h2 class="card-title" data-fr="Numéros de Téléphone" data-en="Phone Numbers" data-ar="أرقام الهاتف">Numéros de Téléphone</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="contact-item">
+                            <span class="contact-label" data-fr="Numéro Khalid:" data-en="Khalid's number:" data-ar="رقم خالد:">Numéro Khalid:</span>
+                            <span class="contact-value">+212 6 34 82 29 40</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label" data-fr="Numéro Propriétaire (France):" data-en="Owner's number (France):" data-ar="رقم المالك (فرنسا):">Numéro Propriétaire (France):</span>
+                            <span class="contact-value">+33 5 69 48 58 77</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label" data-fr="Numéro de secours (numéro vert):" data-en="Emergency number (green number):" data-ar="رقم الطوارئ (الخط الأخضر):">Numéro de secours (numéro vert):</span>
+                            <span class="contact-value">19</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services à proximité -->
+                <section class="info-card">
+                    <div class="card-header">
+                        <h2 class="card-title" data-fr="Services à proximité" data-en="Nearby Services" data-ar="الخدمات القريبة">Services à proximité</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="service-item">
+                            <span class="service-name" data-fr="Pharmacie Prestige Targa" data-en="Prestige Targa Pharmacy" data-ar="صيدلية برستيج تارغا">Pharmacie Prestige Targa</span>
+                            <span class="service-distance" data-fr="(à 40m)" data-en="(40m away)" data-ar="(على بعد 40 متر)">(à 40m)</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name" data-fr="Carrefour Targa" data-en="Carrefour Targa" data-ar="كارفور تارغا">Carrefour Targa</span>
+                            <span class="service-distance" data-fr="(à 1.5km)" data-en="(1.5km away)" data-ar="(على بعد 1.5 كم)">(à 1.5km)</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name" data-fr="Station de Bus" data-en="Bus Station" data-ar="محطة الحافلات">Station de Bus</span>
+                            <span class="service-distance" data-fr="(à 500m)" data-en="(500m away)" data-ar="(على بعد 500 متر)">(à 500m)</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Message de fin -->
+            <div class="footer-message">
+                <p class="goodbye" data-fr="Bonnes vacances !" data-en="Have a great vacation!" data-ar="إجازة سعيدة!">Bonnes vacances !</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

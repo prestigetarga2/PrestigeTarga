@@ -1,0 +1,24 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Dossiers de build (si ajoutés plus tard)
+dist/
+build/
+
+# Fichiers de configuration locaux
+.env
+.env.local 
