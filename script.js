@@ -60,6 +60,23 @@ document.addEventListener('DOMContentLoaded', function() {
     elementsWithTranslations.forEach(element => {
         element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     });
+
+    // Gestion des boutons wifi
+    const wifiButtons = document.querySelectorAll('.wifi-connect-btn');
+    wifiButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const ssid = btn.getAttribute('data-ssid');
+            const password = btn.getAttribute('data-password');
+            // Vérifier si l'API Wifi Web est disponible (rare sur navigateur)
+            if (navigator && navigator.credentials && navigator.credentials.preventSilentAccess) {
+                // API non standard, la plupart des navigateurs ne supportent pas la connexion wifi
+                alert('La connexion automatique au wifi n\'est pas supportée par ce navigateur. Veuillez vous connecter manuellement au réseau "' + ssid + '" avec le mot de passe : ' + password);
+            } else {
+                // Afficher une popup d'aide
+                alert('Pour vous connecter au wifi :\nNom du réseau : ' + ssid + '\nMot de passe : ' + password);
+            }
+        });
+    });
 });
 
 /* Animations d'entrée supprimées */
