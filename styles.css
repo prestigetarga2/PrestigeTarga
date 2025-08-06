@@ -298,5 +298,18 @@ body[dir="rtl"] {
     font-family: 'Amiri', serif;
 }
 
+/* Garder les numéros de téléphone dans le bon ordre en arabe */
+[dir="rtl"] .contact-value {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    text-align: left;
+}
+
+/* Garder les éléments de contact dans le bon ordre en arabe */
+[dir="rtl"] .contact-item {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Effet de brillance sur les cartes */
 /* Effet de brillance sur les cartes supprimé */ 
