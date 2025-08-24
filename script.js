@@ -61,6 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
         element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     });
 
+    // Ajouter des styles de transition pour les boutons de carte
+    const mapButtons = document.querySelectorAll('.map-btn');
+    mapButtons.forEach(button => {
+        button.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    });
+
     // Gestion des boutons wifi
     const wifiButtons = document.querySelectorAll('.wifi-connect-btn');
     wifiButtons.forEach(function(btn) {
